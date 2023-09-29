@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Rate9Shop</title>
+  <link rel="canonical" href="www.rate9.com" />
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+
+  <style amp-custom>
+    body {
+      margin: 0;
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      color: #fff;
+    }
+    .navbar {
+      font-size: 1.4em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    .navbar > a {
+      padding: 20px;
+    }
+    .navbar > a:hover {
+      color: #ff9900;
+      transition: 0.5s;
+    }    
+    .content {
+      padding-top: 60px; 
+      text-align: center;
+      background-image: url(./image/Bg\ Langit\ Malam.png);
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .card-scroll-container {
+      display: flex;
+      justify-content: center;
+      top: 75%; 
+      width: 100%;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      width: 700px; 
+      font-weight: bold;
+      text-shadow: #fff;
+    }
+
+    .card {
+      width: 100px;
+      height: 70px;
+      background-color: #333;
+      margin: 10px;
+      background-size: cover;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .card:hover {
+      transform: scale(1.2);
+      transition: 0.2s;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      background-image: url(./Image/ol_shop_banner.gif);
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .register-button:hover {
+      transform: scale(1.01);
+      transition: 0.5s;
+      background-color: #9d5ed1;
+    }
+    
+    .register-button {
+      background-color: #ff9900;
+      color: #fff;
+      font-size: 1.3em;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 0 10px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .card.card-1 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-2 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-3 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-4 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-5 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-6 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-7 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-8 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-9 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .card.card-10 {
+      background-image: url(./Image/menu_icon4.gif);
+    }
+    .banner2 {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      background-image: url(./Image/ol_shop_banner2.gif);
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+    }
+    .bgcolor {
+      background-color: black;
+      padding: 10px;
+      box-shadow: 1px 1px 1px rgb(240, 206, 206);
+    }
+    .tabel {
+      padding: 10px;
+      margin: 0 auto;
+      border: 2px solid white;
+      text-align: justify;
+    }
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    li {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+    }
+    .tebal {
+      font-weight:bolder;
+      font-size: larger;
+    }
+    a {
+      text-decoration: none;
+      font-weight: bolder;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) { 
+      .navbar a {
+        padding: 5px;
+      }
+     
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="navbar">
+    <a href="./Website_Rate9.html">HOME</a>
+    <a href="#">SHOP</a>
+    <a href="./Rate9_Download.html">DOWNLOAD</a>
+  </div>
+  
+  <div class="content">
+    <div class="banner"></div>
+    <h1>Belanja kebutuhan IT Murah</h1>
+    <div class="button-container">
+      <button class="register-button"><a href="https://www.tokopedia.com/revancreative?source=universe&st=product">TOKOPEDIA</a></button>
+      <button class="register-button"><a href="https://shopee.co.id/fajarkosasih">SHOPEE</a></button>
+    </div><br>
+
+      <div class="card-scroll-container bgcolor"><a href="#">
+        <div class="card-container">
+          <div class="card card-1">STORAGE</div>
+          <div class="card card-2">RAM</div>
+          <div class="card card-3">PSU</div>
+          <div class="card card-4">CMOS</div>
+          <div class="card card-5">VGA</div>
+          <div class="card card-6">PRINTER</div>
+          <div class="card card-7">LAPTOP</div>
+          <div class="card card-8">ACCESORIS</div>
+          <div class="card card-9">SPAREPART</div>
+          <div class="card card-10">OTHERS</div>
+        </div></a>
+    </div>
+    <div class="button-container">
+      <button class="register-button"><a href="#">DONASI</a></button>
+    </div>
+
+    <div class="bgcolor">
+      <div class="banner2"></div>
+    </div>
+    <br>
+
+  <table class="tabel">
+    <tr class="tabel">
+      <td>Nama Situs</td>
+      <td>=</td>
+      <td>Rate9.com</td>
+    </tr>
+    <tr class="tabel">
+      <td>Penulis Artikel</td>
+      <td>=</td>
+      <td>Epan dan Kila</td>
+    </tr>
+    <tr class="tabel">
+      <td>Update Artikel</td>
+      <td>=</td>
+      <td>Minggu dan Rabu</td>
+    </tr>
+    <tr class="tabel">
+      <td>Info Donasi</td>
+      <td>=</td>
+      <td>Bank BCA, Mandiri, Dana, Shopee Pay</td>
+    </tr>
+  </table>
+
+    <div class="button-container">
+      <button class="register-button"><a href="#">KEMBALI KE ATAS</a></button>
+    </div>
+
+    <h3>Copyright 2023 @ EpanKila</h3>
+    <br>
+  </div>
+
+</body>
+</html>
